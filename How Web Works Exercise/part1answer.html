@@ -1,0 +1,37 @@
+<h1>Part One: Solidify Terminology</h1>
+
+<h2>What is HTTP?</h2>
+<p>HTTP (HyperText Transfer Protocol) is the foundation of data communication on the web. It defines how messages are formatted and transmitted, and how web servers and browsers should respond to various commands.</p>
+
+<h2>What is a URL?</h2>
+<p>A URL (Uniform Resource Locator) is the address used to access resources on the internet. It consists of several components, including the protocol (e.g., HTTP), domain name (e.g., somesite.com), and path (e.g., /some/page.html).</p>
+
+<h2>What is DNS?</h2>
+<p>DNS (Domain Name System) translates human-readable domain names (like www.example.com) into IP addresses that computers use to identify each other on the network.</p>
+
+<h2>What is a query string?</h2>
+<p>A query string is a part of a URL that contains data to be passed to web applications. It follows the ? symbol and includes key-value pairs separated by & (e.g., ?key1=value1&key2=value2).</p>
+
+<h2>What are two HTTP verbs and how are they different?</h2>
+<p>GET: Requests data from a specified resource. It should not change the state of the resource.
+<p>POST: Submits data to be processed to a specified resource. It can change the state of the resource.</p></p>
+
+<h2>What is an HTTP request?</h2>
+<p>An HTTP request is a message sent by the client to the server to request a resource or perform an action. It includes a method (e.g., GET, POST), URL, headers, and sometimes a body.</p>
+
+<h2>What is an HTTP response?</h2>
+<p>An HTTP response is a message sent by the server to the client in response to an HTTP request. It includes a status code, headers, and sometimes a body with the requested resource or information.</p>
+
+<h2>What is an HTTP header? Give a couple examples of request and response headers you have seen.</h2>
+<p>HTTP headers are key-value pairs sent in HTTP requests and responses to provide additional information. Examples:
+    Request Header: User-Agent (information about the client), Accept (types of media the client can process)
+    Response Header: Content-Type (media type of the resource), Set-Cookie (sets a cookie)</p>
+
+<h2>What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?</h2>
+<p><p>DNS Lookup: The browser translates the domain name into an IP address.</p>
+    <p>TCP Connection: The browser establishes a TCP connection with the server.</p>
+    <p>HTTP Request: The browser sends an HTTP GET request to the server.</p>
+    <p>Server Processing: The server processes the request and prepares an HTTP response.</p>
+    <p>HTTP Response: The server sends the HTTP response back to the browser.</p>
+    <p>Rendering: The browser renders the HTML content and any associated resources (CSS, JavaScript, images).</p>
+</p>

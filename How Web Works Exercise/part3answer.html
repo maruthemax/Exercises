@@ -1,0 +1,32 @@
+<!-- Build a very simple HTML form that uses the GET method -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <form method="GET" action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+<!-- Explore in Chrome Developer tools how you can view the request and response headers.
+Open Chrome Developer Tools (F12 or right-click and select “Inspect”).
+Go to the “Network” tab.
+Submit the form and observe the request and response headers. -->
+
+<!-- Edit the page to change the form type to POST, refresh in the browser and re-submit. -->
+<form method="POST" action="">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <button type="submit">Submit</button>
+</form>
+
+
+<!-- Submit the form and observe the request and response headers in the “Network” tab.
+Notice that the form data is now in the request body, not the query string. -->

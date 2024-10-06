@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Fill in the Blanks{% endblock %}
+
+{% block content %}
+    <h2>Pick a story and fill in the blanks!</h2>
+    <form action="/story">
+        <label for="story">Choose a story:</label>
+        <select id="story" name="story" required>
+            <option value="story1">Fairy Tale</option>
+            <option value="story2"> A Day at the Park</option>
+            <option value="story3">A Funny Adventure</option>
+        </select><br><br>
+
+        {% for prompt in prompts %}
+            <label for="{{ prompt }}">{{ prompt }}:</label>
+            <input type="text" id="{{ prompt }}" name="{{ prompt }}" required><br><br>
+        {% endfor %}
+        
+        <input type="submit" value="Generate Story">
+    </form>
+    
+{% endblock %}

@@ -4,11 +4,12 @@
     <h2>{{ question.question }}</h2>
     <form method="POST" action="/answer">
         {% for choice in question.choices %}
-            <label for="">
+            <label>
                 <input type="radio" name="answer" value="{{ choice }}" required>
                 {{ choice }}
             </label><br>
         {% endfor %}
-        <button>Submit</button>
+        <button type="submit">Submit</button>
+        <input type="hidden" name="qid" value="{{ qid }}">
     </form>
 {% endblock %}
